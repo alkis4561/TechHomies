@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/generalRules.css">
+    <title>TECH HOMIES|Register</title>
+</head>
+<body>
+  <div class="papa-container"> 
+    <header class="header-container">
+      <nav class="head-nav">
+          <div class="flex-container">
+            <div class="logo">
+              <a class="home-page-link flex-container" href="index.html">
+                  <img height="60" src="./Photos/logos/techHommies.png" alt="">
+                  <h1 class="home">Tech hommies</h1> 
+              </a>   
+          </div>    
+                  <ul class="main-nav-list">
+                      <li><a href="index.html">Αρχική</a></li>
+                      <li><a href="product-categories.html">Προϊόντα</a></li>
+                      <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+                      <li><a href="support.html">Υποστήριξη</a></li>
+                      <li><a class="current" href="register-form.html"><img src="./Photos/logos/register.png" alt=""></a></li>
+                  </ul>          
+          </div>               
+      </nav> 
+      <nav class="head-nav">
+        <ul class="cellphone-main-nav-list">
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="product-categories.html">Προϊόντα</a></li>
+            <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+            <li><a href="support.html">Υποστήριξη</a></li>
+            <li><a class="current" href="register-form.html">Εγγραφή χρήστη</a></li>
+        </ul>  
+    </nav>
+    </header>
+    <main class="main-container">
+        <article>
+            <div class="form-container">
+              <div class="form-flex-item">
+                <h1>Δημιουργία λογαριασμού χρήστη:</h1>
+                <hr>
+                <form autocomplete="on" id="register-form" action="/upothetikos-server/controller">
+                  <details>
+                      <summary>Προσωπικά στοιχέια χρήστη</summary>
+                      <div>
+                          <label class="input-label" for="fullname"> Ονοματεπώνυμο: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="fullname" type="text" name="fullname"/>
+                        </div>
+                        <div>
+                          <label class="input-label" for="email"> Email:<span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="email" type="email" name="email" />
+                        </div>
+                        <div>
+                          <label class="input-label" for="cars">Πόλη</label>
+                              <select class="select-input" name="cars" id="cars" form="carform">
+                                  <option value="athens">Αθήνα</option>
+                                  <option value="thessaloniki">Θεσσαλονίκη</option>
+                                  <option value="patras">Πάτρα</option>
+                                  <option value="sparta">Σπάρτη</option>
+                              </select>
+                        </div>
+                        <div>
+                          <label class="input-label" for="address-area"> Περιοχή: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="address-area" type="text" name="address-area" />
+                        </div>
+                        <div>
+                          <label class="input-label" for="street-and-number"> Οδός και αριθμός: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="street-and-number" type="text" name="street-and-number" />
+                        </div>
+                        <div>
+                          <label class="input-label" for="postal-code"> Ταχυδρομικός κώδικας: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="postal-code" type="text" name="postal-code" />
+                        </div>
+                      <div>
+                        <label class="input-label" for="tel"> Τηλέφωνο: <span aria-label="required">*</span></label>
+                        <input class="input" required="required" id="tel" type="tel" name="tel" />
+                      </div>
+                  </details> 
+                  <details>
+                      <summary>Στοιχεία πληρωμής και Αποστολής προϊόντων</summary>
+                      <div>
+                          <label class="input-label" for="cars">Τρόπος πληρωμής</label>
+                              <select class="select-input" name="payment-method" id="payment-method" form="register-form">
+                                  <option value="cash">Μετρητά</option>
+                                  <option value="card">Κάρτα</option>
+                                  <option value="paypal">Paypal</option>
+                              </select>
+                        </div>
+                        <div>
+                          <label class="input-label" for="shipping-area"> Περιοχή: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="shipping-area" type="text" name="shipping-area" />
+                        </div>
+                        <div>
+                          <label class="input-label" for="shipping-street-and-number"> Οδός και αριθμός: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="shipping-street-and-number" type="text" name="shipping-street-and-number" />
+                        </div>
+                        <div>
+                          <label class="input-label" for="shipping-postal-code"> Ταχυδρομικός κώδικας: <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="shipping-postal-code" type="text" name="shipping-postal-code" />
+                        </div>
+                  </details>                      
+                  <details>
+                      <summary>Στοιχεία χρήστη</summary>
+                      <div>
+                          <label class="input-label" for="username"> Όνομα χρήστη (Username): <span aria-label="required">*</span></label>
+                          <input class="input" required="required" id="username" type="text" name="username" />
+                      </div>
+                      <div>
+                          <label class="input-label" for="password">Κωδικός χρήστη (Password): <span aria-label="required">*</span></label>
+                          <input autocomplete="off" class="input" required="required" required="required" type="password" id="password" name="password">
+                      </div>
+                      <div>
+                          <label class="input-label" for="password-rep">Επανάληψη κωδικού χρήστη (Password repetition): <span aria-label="required">*</span></label>
+                          <input autocomplete="off" class="input" required="required" required="required" type="password" id="password-rep" name="password-rep">
+                      </div>
+                  </details>
+                  <fieldset class="questionaire">
+                    <legend>Ερωτηματολόγιο</legend>
+                          <fieldset class="checkbox-fieldset">
+                            <legend>Επιθυμώ να λαμβάνω ειδοποιήσεις μέσω:</legend>      
+                            <input type="checkbox" name="notification-method" value="SMS">SMS<br>      
+                            <input type="checkbox" name="notification-method" value="email">E-mail<br>      
+                            <input type="checkbox" name="notification-method" value="Viber">Viber<br>
+                            <input type="checkbox" name="notification-method" value="WhatsApp">WhatsApp<br>  
+                          </fieldset>                                               
+                          <br>
+                          <fieldset class="radio-fieldset">
+                            <legend>Πόσες φορές κάνετε online αγορές μέσα στον μήνα(Κατά προσέγγιση);</legend>  
+                            <input type="radio" id="online-buy-rate1" name="online-buy-rate" value="1">
+                            <label for="online-buy-rate1">0-2</label><br>
+                            <input type="radio" id="online-buy-rate2" name="online-buy-rate" value="2">
+                            <label for="online-buy-rate2">2-5</label><br>  
+                            <input type="radio" id="online-buy-rate3" name="online-buy-rate" value="3">
+                            <label for="online-buy-rate3">5 και άνω</label><br><br>
+                          </fieldset>                                                           
+                          <label class="input-label" for="prefered-paying-method" >Προτιμώ να πληρώνω συνήθως με (γράψτε όποιον τρόπο επιθυμείτε):</label>
+                          <textarea class="input" name="prefered-paying-method" placeholder="π.χ Μέσω GooglePay,..." rows="5" cols="50" maxlength="2048">π.χ Μέσω GooglePay,...
+                          </textarea>
+                          <fieldset>
+                            <legend>Αγοράζω συνήθως προιόντα για (Άτομο);</legend>
+                            <input type="radio" id="buying-for1" name="buying-for" value="Me">
+                            <label for="buying-for1">Εμένα</label><br>
+                            <input type="radio" id="buying-for2" name="buying-for" value="Friend">
+                            <label for="buying-for2">Φίλο/η</label><br>  
+                            <input type="radio" id="buying-for3" name="buying-for" value="Relative">
+                            <label for="buying-for3">Συγγενή</label><br>
+                            <input type="radio" id="buying-for4" name="buying-for" value="Boss">
+                            <label for="buying-for4">Εργοδότη</label><br><br>
+                          </fieldset>                              
+                          <label class="input-label" for="prefered-buying-products" >Τι είδους προϊόντα συνηθίζετε να αγοράζετε μέσω διαδικτύου;</label>
+                          <textarea class="input" name="prefered-buying-products" placeholder="π.χ Προϊόντα τεχνολογίας..." rows="5" cols="50" maxlength="2048">π.χ Προϊόντα τεχνολογίας...
+                          </textarea>
+                          <fieldset>
+                            <legend>Πόσο ασφαλής νιώθετε όταν πραγματοποιείτε μια αγορά (Μέσω διαδικτύου):</legend>
+                            <input type="radio" id="safety-feeling1" name="safety-feeling" value="Safe">
+                            <label for="safety-feeling1">Ασφαλής</label><br>
+                            <input type="radio" id="safety-feeling2" name="safety-feeling" value="Neutral">
+                            <label for="safety-feeling2">Ουδέτερα</label><br>  
+                            <input type="radio" id="safety-feeling3" name="safety-feeling" value="Unsafe">
+                            <label for="safety-feeling3">Ανασφαλής</label><br><br>
+                          </fieldset>                              
+                          <label class="input-label" for="shopping-notices" >Τι προσέχω περισσότερο κατά τις αγορές μου στο διαδίκτυο;</label>
+                          <textarea class="input" name="shopping-notices" placeholder="π.χ Τις αξιολογήσεις του καταστήματος..." rows="5" cols="50" maxlength="2048">π.χ Τις αξιολογήσεις του καταστήματος...
+                          </textarea>
+                      <div>
+                        <p>
+                          <button class="submit-btn" type="submit">Υποβολή</button>
+                        </p>
+                      </div> 
+                  </fieldset>                    
+              </form>               
+              </div>    
+          </article>
+    </main>
+    <footer class="footer-container">  
+        <div class="footer-nav">
+            <div class="footer-flex-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="product-categories.html">Προϊόντα</a></li>
+                        <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+                        <li><a href="support.html">Υποστήριξη</a></li>
+                    </ul>    
+                </nav>
+                <div class="social-media-links">
+                    <p>Επικοινωνία</p>
+                    <a href="https://www.facebook.com/"><img src="/Photos/logos/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="/Photos/logos/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+            <div class="copyrights">
+                <hr>
+                <p>© 2022 Mitsiorovic & alkis4561</p>
+            </div> 
+    </footer>
+  </div>
+  <script src="scripts/register-form.js"></script>
+</body>

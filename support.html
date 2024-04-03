@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/generalRules.css">
+    <title>TECH HOMIES|Υποστήριξη</title>
+</head>
+<body>
+  <div class="papa-container"> 
+    <header class="header-container">
+      <nav class="head-nav">
+          <div class="flex-container">
+            <div class="logo">
+              <a class="home-page-link flex-container" href="index.html">
+                  <img height="60" src="./Photos/logos/techHommies.png" alt="">
+                  <h1 class="home">Tech hommies</h1> 
+              </a>   
+          </div>    
+                  <ul class="main-nav-list">
+                      <li><a href="index.html">Αρχική</a></li>
+                      <li><a href="product-categories.html">Προϊόντα</a></li>
+                      <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+                      <li><a class="current" href="support.html">Υποστήριξη</a></li>
+                      <li><a href="register-form.html"><img src="./Photos/logos/register.png" alt=""></a></li>
+                  </ul>          
+          </div>               
+      </nav> 
+      <nav class="head-nav">
+        <ul class="cellphone-main-nav-list">
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="product-categories.html">Προϊόντα</a></li>
+            <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+            <li><a class="current" href="support.html">Υποστήριξη</a></li>
+            <li><a href="register-form.html">Εγγραφή χρήστη</a></li>
+        </ul>  
+    </nav>
+    </header>
+    <main class="main-container">
+              <article>
+                  <div class="form-container">
+                    <div class="form-flex-item">
+                      <h1>Υποστήριξη:</h1>
+                      <hr>
+                      <form id="support-form" action="">
+                        <fieldset>
+                          <div>
+                              <label class="input-label" for="fullname"> Ονοματεπώνυμο: <span aria-label="required">*</span></label>
+                              <input class="input" required="required" id="fullname" type="text" name="fullname" />
+                            </div>
+                            <div>
+                              <label class="input-label" for="email"> Email:<span aria-label="required">*</span></label>
+                              <input class="input" required="required" id="email" type="email" name="email" />
+                            </div>
+                            <div>
+                              <label class="input-label" for="tel"> Τηλέφωνο: <span aria-label="required">*</span></label>
+                              <input class="input" required="required" id="tel" type="tel" name="tel" />
+                            </div>
+                            <div>
+                              <label class="input-label" for="code">Κωδικός προϊόντος: <span aria-label="required">*</span></label>
+                              <input class="input" required="required" required="required" type="number" id="code" name="code" min="0" max="9999">
+                            </div>
+                            <div>
+                              <label class="input-label" for="purchaseDate">Ημερομηνία αγοράς: <span aria-label="required">*</span></label>
+                              <input class="input" required="required" type="date" id="purchaseDate" name="purchaseDate">
+                            </div>
+                            <div>
+                              <label class="input-label" for="receipt">Απόδειξη αγοράς: <span aria-label="required">*</span></label>
+                              <input class="input" required="required" type="file" id="receipt" name="receipt">
+                            </div>
+                            <div>
+                              <label class="input-label" for="problemDescription" >Περιγραψτε το προβλημα σας:</label>
+                              <br>
+                              <textarea class="input" name="problemDescription" placeholder="π.χ Η μπαταρία διαρκει πολύ λίγο..." rows="10" cols="30" maxlength="2048">π.χ η οθονη μ δειχνει μονο μαυρο
+                              </textarea>
+                          </div>
+                          <div>
+                              <p>
+                                <button class="submit-btn" type="submit">Υποβολή</button>
+                              </p>
+                            </div> 
+                          </fieldset>                     
+                        </form>   
+                    </div>
+                    
+                  </div>             
+              </article>
+    </main>
+    <footer class="footer-container">  
+        <div class="footer-nav">
+            <div class="footer-flex-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="product-categories.html">Προϊόντα</a></li>
+                        <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+                        <li><a href="support.html">Υποστήριξη</a></li>
+                    </ul>    
+                </nav>
+                <div class="social-media-links">
+                    <p>Επικοινωνία</p>
+                    <a href="https://www.facebook.com/"><img src="/Photos/logos/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="/Photos/logos/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+            <div class="copyrights">
+                <hr>
+                <p>© 2022 Mitsiorovic & alkis4561</p>
+            </div> 
+    </footer>
+  </div>
+</body>
